@@ -2,89 +2,225 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历</title>
     <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 20px;
+            background-color: #fffaf0; /* 浅黄色背景 */
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .resume {
+            width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            border: 1px solid #f5e6c8; /* 浅黄色边框 */
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #f0c14b; /* 金色下划线 */
+            padding-bottom: 10px;
+        }
         table {
-            width: 80%;
-            margin: 20px auto;
+            width: 100%;
             border-collapse: collapse;
-            border: 2px solid #333;
+            margin-top: 20px;
         }
         th, td {
-            border: 1px solid #666;
-            padding: 10px;
+            border: 1px solid #f5e6c8; /* 浅黄色边框 */
+            padding: 12px;
             text-align: left;
         }
         th {
-            background-color: #f0f0f0;
+            background-color: #fff8e1; /* 更浅的黄色背景 */
             font-weight: bold;
         }
-        .title {
-            text-align: center;
-            font-size: 24px;
-            padding: 20px;
+        .photo {
+            width: 120px;
+            height: 160px;
+            object-fit: cover;
+            border: 1px solid #f5e6c8;
         }
         .icon {
+            width: 20px;
+            height: 20px;
             vertical-align: middle;
             margin-right: 5px;
         }
-        .photo {
-            width: 100px;
-            height: 130px;
-            border-radius: 50%;
-            border: 2px solid #333;
-        }
-        .self-eval {
-            text-indent: 2em;
-            line-height: 1.6;
+        .section-title {
+            background-color: #fff3e0; /* 标题区域浅黄色背景 */
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="3" class="title">个人简历</th>
-        </tr>
-        <tr>
-            <td rowspan="4" style="width: 30%;">
-                <h3>个人信息</h3>
-                <img src="hai.jpg" alt="个人照片" class="photo">
-                <p><strong>姓名：</strong>陈昊妍</p>
-                <p><strong>联系方式：</strong>18103069945</p>
-                <p><strong>邮箱：</strong>2967945573@qq.com</p>
-            </td>
-            <th colspan="2">教育背景</th>
-        </tr>
-        <tr>
-            <td><img src="https://via.placeholder.com/16x16.png?text=🎓" alt="教育图标" class="icon">2018-2022</td>
-            <td>鲁东大学 -软件专业 - 学士</td>
-        </tr>
-        <tr>
-            <th colspan="2">工作经历</th>
-        </tr>
-        <tr>
-            <td><img src="https://via.placeholder.com/16x16.png?text=💼" alt="工作图标" class="icon">2022-至今</td>
-            <td>现就读与鲁东大学,是一名在校本科生</td>
-        </tr>
-        <tr>
-            <th colspan="3">技能与证书</th>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <ul>
-                    <li>编程语言：c语言</li>
-                    <li>框架:还在学习中</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" class="self-eval">
-                <h3>自我评价</h3>
-                <p>
-                    本人具备扎实的计算机基础知识，熟悉多种编程语言和框架。在工作中，我始终保持积极的学习态度，不断追求技术的创新与突破。我擅长团队协作，能够高效沟通并解决问题。同时，我也注重个人能力的提升，不断挑战自我，追求卓越。我相信，在未来的职业生涯中，我将继续发挥自己的优势，为公司的发展贡献自己的力量。
-                </p>
-            </td>
-        </tr>
-    </table>
+    <div class="resume">
+        <h1>个人简历</h1>
+        
+        <table>
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" class="icon">
+                    基本信息
+                </th>
+            </tr>
+            <tr>
+                <td width="15%">姓名</td>
+                <td width="35%">陈昊妍</td>
+                <td width="15%">性别</td>
+                <td width="35%">女</td>
+            </tr>
+            <tr>
+                <td>出生日期</td>
+                <td>2006-09-30</td>
+                <td>籍贯</td>
+                <td>江西樟树</td>
+            </tr>
+            <tr>
+                <td>民族</td>
+                <td>汉族</td>
+                <td>政治面貌</td>
+                <td>群众</td>
+            </tr>
+            <tr>
+                <td>健康状况</td>
+                <td>良好</td>
+                <td>身高</td>
+                <td>165cm</td>
+            </tr>
+            <tr>
+                <td>联系电话</td>
+                <td>18103069945</td>
+                <td>电子邮箱</td>
+                <td>2967945573@qq.com</td>
+            </tr>
+            <tr>
+                <td>照片</td>
+                <td colspan="3">
+                    <img src="hai.jpg" alt="个人照片" class="photo">
+                    
+                </td>
+            </tr>
+            
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png" class="icon">
+                    教育背景
+                </th>
+            </tr>
+            <tr>
+                <td>毕业院校</td>
+                <td colspan="3">鲁东大学</td>
+            </tr>
+            <tr>
+                <td>专业</td>
+                <td colspan="3">软件工程</td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>在校本科生</td>
+                <td>学位</td>
+                <td>工学</td>
+            </tr>
+            <tr>
+                <td>毕业时间</td>
+                <td>2028-06</td>
+                <td>GPA</td>
+                <td>待定</td>
+            </tr>
+            
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/briefcase.png" class="icon">
+                    工作经历
+                </th>
+            </tr>
+            <tr>
+                <td>2018.07-至今</td>
+                <td colspan="3">
+                    <strong>阿里巴巴集团</strong> - 高级软件工程师<br>
+                    负责电商平台后端开发，主导了多个核心模块的设计与实现
+                </td>
+            </tr>
+            <tr>
+                <td>2016.06-2018.06</td>
+                <td colspan="3">
+                    <strong>腾讯科技有限公司</strong> - 软件开发工程师<br>
+                    参与微信支付系统的开发与维护
+                </td>
+            </tr>
+            
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/star--v1.png" class="icon">
+                    个人技能
+                </th>
+            </tr>
+            <tr>
+                <td>专业技能</td>
+                <td colspan="3">
+                    <ul>
+                        <li>精通Java、Python、C++等编程语言</li>
+                        <li>熟悉Spring Boot、Django等开发框架</li>
+                        <li>熟练使用MySQL、MongoDB等数据库</li>
+                        <li>了解大数据处理技术如Hadoop、Spark</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>语言能力</td>
+                <td colspan="3">
+                    <ul>
+                        <li>英语CET-6，具备良好的听说读写能力</li>
+                        <li>日语N2水平</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好</td>
+                <td colspan="3">编程、阅读、游泳、摄影、旅行</td>
+            </tr>
+            
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/trophy.png" class="icon">
+                    获奖情况
+                </th>
+            </tr>
+            <tr>
+                <td>2019年</td>
+                <td colspan="3">阿里巴巴年度优秀员工</td>
+            </tr>
+            <tr>
+                <td>2017年</td>
+                <td colspan="3">腾讯技术创新奖</td>
+            </tr>
+            <tr>
+                <td>2015年</td>
+                <td colspan="3">全国大学生程序设计竞赛一等奖</td>
+            </tr>
+            
+            <tr class="section-title">
+                <th colspan="4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/edit.png" class="icon">
+                    自我评价
+                </th>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>本人性格开朗、稳重、有活力，待人热情、真诚。工作认真负责，积极主动，能吃苦耐劳。有较强的组织能力、实际动手能力和团体协作精神，能迅速的适应各种环境，并融合其中。在校期间学习认真，工作负责，积极配合老师完成工作任务，并多次组织参加社会实践活动，在自己能力和素质上都有了进一步的提高，相信自己能够适应这个社会，为我们的社会多做贡献。</p>
+                    <p>在专业学习方面，我系统学习了软件工程的相关课程，掌握了扎实的专业基础知识，具备较强的编程能力和系统设计能力。通过参与多个实际项目，积累了丰富的开发经验，能够独立完成软件系统的设计与实现。在工作中，我注重团队合作，善于沟通协调，能够快速融入团队并发挥自己的作用。同时，我始终保持学习的热情，关注行业最新技术动态，不断提升自己的专业能力。</p>
+                    <p>未来，我希望能够在技术领域继续深耕，将所学知识应用于实际工作中，为公司创造价值的同时实现个人职业发展目标。</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
